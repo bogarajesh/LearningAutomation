@@ -30,6 +30,7 @@ public class LogIn {
         String heading = driver.findElement(By.xpath("//span[text()='Products']")).getText();
         System.out.println("Heading: " + heading);
 
+
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
         driver.quit();
