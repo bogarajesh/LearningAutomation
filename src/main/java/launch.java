@@ -33,9 +33,7 @@ public class launch {
         Thread.sleep(2000);
 
         driver.manage().window().maximize();
-
         Thread.sleep(2000);
-
         System.out.println(driver.getTitle());
 
         System.out.println(driver.getCurrentUrl());
