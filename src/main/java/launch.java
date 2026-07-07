@@ -1,44 +1,42 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class launch {
-    public static void main(String[] args) throws InterruptedException {
+void main() throws InterruptedException {
 
-        WebDriver driver = new ChromeDriver();
+    WebDriver driver = new ChromeDriver();
 
-        driver.get("https://www.google.com");
+    driver.get("https://www.google.com");
 
-        driver.manage().window().maximize();
+    driver.manage().window().maximize();
 
-        Thread.sleep(2000);
+    Thread.sleep(2000);
 
-        System.out.println(driver.getTitle());
+    System.out.println(driver.getTitle());
 
-        driver.navigate().to("https://www.saucedemo.com");
+    driver.navigate().to("https://www.saucedemo.com");
 
-        Thread.sleep(2000);
+    Thread.sleep(2000);
 
-        driver.navigate().to("https://www.OrangeHRM.com");
+    driver.navigate().to("https://www.OrangeHRM.com");
 
-        driver.navigate().back();
+    driver.navigate().back();
 
-        Thread.sleep(2000);
+    Thread.sleep(2000);
 
-        driver.navigate().forward();
+    driver.navigate().forward();
 
-        Thread.sleep(2000);
+    Thread.sleep(2000);
 
-        driver.navigate().refresh();
+    driver.navigate().refresh();
 
-        Thread.sleep(2000);
+    Thread.sleep(2000);
 
-        driver.manage().window().maximize();
-        Thread.sleep(2000);
-        System.out.println(driver.getTitle());
+    driver.manage().window().maximize();
+    Thread.sleep(2000);
+    System.out.println(driver.getTitle());
 
-        System.out.println(driver.getCurrentUrl());
+    System.out.println(driver.getCurrentUrl());
 
-        driver.quit();
+    driver.quit();
 
-    }
 }
