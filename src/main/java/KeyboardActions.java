@@ -1,7 +1,4 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -44,14 +41,14 @@ public class KeyboardActions {
                     .keyUp(Keys.CONTROL)
                     .perform();
 
+
             WebElement submitBtn = driver.findElement(By.id("submit"));
             submitBtn.click();
 
-
             WebElement output = driver.findElement(By.id("output"));
             Thread.sleep(2000);
-            System.out.println(output.getText());
 
+            System.out.println(output.getText());
 
             driver.quit();
         }
