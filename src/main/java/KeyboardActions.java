@@ -48,10 +48,10 @@ public class KeyboardActions {
             submitBtn.click();
 
 
-            WebElement output = driver.findElement(By.xpath("//button[text()='Submit']"));
+            WebElement output = driver.findElement(By.id("output"));
+            Thread.sleep(2000);
             System.out.println(output.getText());
 
-            Thread.sleep(3000);
 
             driver.quit();
         }
