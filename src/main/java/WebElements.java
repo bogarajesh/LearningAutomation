@@ -12,7 +12,7 @@ public class WebElements {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-
+        //checkbox
         driver.get("https://the-internet.herokuapp.com/checkboxes");
         Thread.sleep(4000);
     WebElement cb2 = driver.findElement(By.xpath("//input[@type='checkbox']"));
@@ -22,7 +22,7 @@ public class WebElements {
         System.out.println(cb2.isSelected());
 
 
-
+        // dropdown memu
         driver.navigate().to("https://the-internet.herokuapp.com/dropdown");
         Thread.sleep(2000);
     WebElement dropdownElements = driver.findElement(By.id("dropdown"));
@@ -31,12 +31,12 @@ public class WebElements {
         Thread.sleep(2000);
         System.out.println(dropdown.getFirstSelectedOption().getText());
 
-
+        //radio button
         driver.navigate().to("https://demoqa.com/radio-button");
         Thread.sleep(2000);
     WebElement radiobutton = driver.findElement(By.id("impressiveRadio"));
 
-
+        //alert
         driver.navigate().to("https://the-internet.herokuapp.com/javascript_alerts");
         driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
     Alert alert = driver.switchTo().alert();
