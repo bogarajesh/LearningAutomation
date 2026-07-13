@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -23,10 +24,18 @@ public class ScreenShotDemo {
 
         TakesScreenshot SS = (TakesScreenshot) driver;
         File source = SS.getScreenshotAs(OutputType.FILE);
-
         File destination = new File("Screenshots/LoginPage.png");
-
         FileHandler.copy(source, destination);
+
+        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+        driver.findElement(By.id("login-button")).click();
+
+        TakesScreenshot SS1 = (TakesScreenshot) driver;
+        source = SS.getScreenshotAs(OutputType.FILE);
+        destination = new File("Screenshots/Logged In.png");
+        FileHandler.copy(source, destination);
+
 
         System.out.println("SS Saved!");
         driver.quit();
