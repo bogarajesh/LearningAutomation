@@ -27,8 +27,8 @@ public class JavaScriptExecutorDemo {
         Thread.sleep(2000); // For demo only
 
         // down
-        js.executeScript("window.scrollBy(0,500)");
-        Thread.sleep(2000); // For demo only
+            js.executeScript("window.scrollBy(0,500)");
+            Thread.sleep(2000); // For demo only
 
         //up
         js.executeScript("window.scrollBy(0,-500)");
