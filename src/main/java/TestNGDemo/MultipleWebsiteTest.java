@@ -19,19 +19,19 @@ public class MultipleWebsiteTest {
     @Test
     public void googleTest() {
         driver.get("https://www.google.com");
-        System.out.println("Google Page Title: " + driver.getTitle());
+        System.out.println(driver.getTitle());
     }
 
     @Test
     public void amazonTest() {
         driver.get("https://www.amazon.in");
-        System.out.println("Amazon Page Title: " + driver.getTitle());
+        System.out.println(driver.getTitle());
     }
 
     @Test
     public void flipkartTest() {
         driver.get("https://www.flipkart.com");
-        System.out.println("Flipkart Page Title: " + driver.getTitle());
+        System.out.println(driver.getTitle());
     }
 
     @AfterMethod
