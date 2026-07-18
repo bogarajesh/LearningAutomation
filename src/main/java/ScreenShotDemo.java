@@ -24,7 +24,7 @@ public class ScreenShotDemo {
 
         TakesScreenshot SS = (TakesScreenshot) driver;
         File source = SS.getScreenshotAs(OutputType.FILE);
-        File destination = new File("Screenshots/LoginPage.png");
+        File destination = new File("Screenshots/Home Page.png");
         FileHandler.copy(source, destination);
 
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
