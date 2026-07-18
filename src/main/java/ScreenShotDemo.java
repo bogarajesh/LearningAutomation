@@ -36,9 +36,7 @@ public class ScreenShotDemo {
         destination = new File("Screenshots/Logged In.png");
         FileHandler.copy(source, destination);
 
-
         System.out.println("SS Saved!");
         driver.quit();
-
     }
 }
